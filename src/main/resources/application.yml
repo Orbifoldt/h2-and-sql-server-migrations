@@ -1,0 +1,18 @@
+greeting:
+  message: "hello"
+
+quarkus:
+  datasource:
+    jdbc:
+      url: jdbc:h2:mem:myDB
+    username: sa
+    db-kind: h2
+#  datasource:   # See readme.md how to start and setup sql server container
+#    jdbc:
+#      url: jdbc:sqlserver://localhost:1433;databaseName=myDB
+#    username: sa
+#    password: NiCe_pAsSword123*
+#    db-kind: mssql
+  flyway:
+    migrate-at-start: true
+    validate-on-migrate: false
