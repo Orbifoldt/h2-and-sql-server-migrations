@@ -2,12 +2,15 @@ greeting:
   message: "hello"
 
 quarkus:
+# H2 SQL db settings
   datasource:
     jdbc:
-      url: jdbc:h2:mem:myDB
+      driver: org.h2.Driver
+      url: jdbc:h2:mem:myDB;mode=MSSQLServer #INIT=CREATE DOMAIN IF NOT EXISTS UNIQUEIDENTIFIER AS UUID;   #;mode=MSSQLServer
     username: sa
-    db-kind: h2
-#  datasource:   # See readme.md how to start and setup sql server container
+    db-kind: mssql
+# MS SQL Server settings --- See readme.md how to start and setup sql server container
+#  datasource:
 #    jdbc:
 #      url: jdbc:sqlserver://localhost:1433;databaseName=myDB
 #    username: sa

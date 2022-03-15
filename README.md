@@ -10,7 +10,7 @@ Then create the database by executing below:
 CREATE DATABASE myDB;
 GO;
 ```
-After this you can uncomment the mssql settings in the [`application.yml`](src/main/resources/application.yml). You can also run the integration test using this database (but beware that old data will get persisted).
+After this you can uncomment the mssql settings in the [`application.yml`](src/main/resources/application.yml). You can also run the integration test using this database, but you best comment out the tests that use DBUnit, i.e. those annotated by `@DataSet`. Be aware that the test data will get persisted.
 
 To see the content of the DB simply run this query:
 ```sql
