@@ -30,3 +30,4 @@ You can run your application in dev mode that enables live coding using:
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
+(project generated with https://code.quarkus.io/?a=h2-and-sql-server-migrations&e=kotlin&e=hibernate-orm-panache-kotlin&e=jdbc-mssql&e=jdbc-h2&e=hibernate-orm-panache&e=resteasy&e=resteasy-jackson&e=flyway&e=config-yaml)

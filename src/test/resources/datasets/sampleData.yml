@@ -1,0 +1,17 @@
+myTable:
+  - id: 1
+    name: blabla
+    someUuid: aaaabbbb-67d0-4735-9311-b1eb0c2036fe
+  - id: 2
+    name: theSecond
+    someUuid: ccccdddd-67d0-4735-9311-b1eb0c2036fe
+children:
+  - id: 1
+    parentId: 2
+    name: child1
+  - id: 2
+    parentId: 2
+    name: child2
+  - id: 3
+    parentId: 2
+    name: child3
